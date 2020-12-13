@@ -1,5 +1,6 @@
 <template>
   <div class="container text-center">
+    <div class="text-center text-secondary">Welcome Back <span class="text-info">{{ user }}</span></div>
     <div class="row justify-content-center">
       <div class="col-10 col-md-10 col-lg-8 col-xl-7">
         <h4 class="display-4 text-primary mt-3 mb-2">Meeting Log</h4>
@@ -35,6 +36,7 @@
 import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome'
 export default {
   name: "Home",
+  props: ['user'],
   components: {
     FontAwesomeIcon
   }
