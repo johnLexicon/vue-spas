@@ -48,9 +48,6 @@
     ],
     "parserOptions": {
       "parser": "babel-eslint"
-    },
-    "rules": {
-      "quotes": ["single"]
     }
   },
   "prettier": {
