@@ -60,7 +60,7 @@
                 </button>
 
                 <router-link
-                  to="/"
+                  :to="`/checkin/${user.uid}/${meeting.id}`"
                   class="btn btn-sm btn-outline-secondary"
                   title="Check In"
                 >
