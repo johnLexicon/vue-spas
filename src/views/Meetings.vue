@@ -68,7 +68,7 @@
                 </router-link>
 
                 <router-link
-                  to="/"
+                  :to="`/attendees/${user.uid}/${meeting.id}`"
                   class="btn btn-sm btn-outline-secondary"
                   title="Attendees"
                 >

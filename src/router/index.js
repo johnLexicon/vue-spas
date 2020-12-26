@@ -5,6 +5,7 @@ import Login from '../views/Login.vue'
 import Register from '../views/Register.vue'
 import Meetings from '../views/Meetings.vue'
 import CheckIn from '../views/CheckIn.vue'
+import Attendees from '../views/Attendees.vue'
 
 Vue.use(VueRouter)
 
@@ -33,6 +34,12 @@ const routes = [
     path: '/checkin/:userId/:meetingId',
     name: 'CheckIn',
     component: CheckIn
+  },
+  {
+    path: '/attendees/:userId/:meetingId',
+    name: 'Attendees',
+    component: Attendees,
+    props: true
   },
   {
     path: '*',

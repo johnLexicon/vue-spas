@@ -123,7 +123,7 @@ export default {
               email: payload.email,
               createdAt: Firebase.firestore.FieldValue.serverTimestamp()
             })
-          this.$router.push('/')
+          this.$router.push(`/attendees/${payload.userId}/${payload.meetingId}`)
         } else {
           this.error = 'Sorry, no such meeting'
         }
